@@ -1,0 +1,41 @@
+Trend-gated XS multifactor + XGBoost backtest (20d retune)
+universe (20): AG, AU, CF, CU, FG, I, J, JM, L, M, MA, P, PP, RB, RU, SA, SC, TA, V, Y
+range: 2009-09-30 -> 2026-10-27  days=4159
+rebalance: every 20 trading days | select_pct=0.25
+label: forward 20d return (regression) | train: expanding walk-forward
+min_train_samples=1500 min_train_rebals=100
+features: mom_20, mom_60, mom_120, low_vol, oi_chg_20, channel_pos
+xgb_params: depth=3 n_estimators=80 lr=0.05
+capital=1000000.0 | commission=0.0001 | slippage=1 tick | risk_frac/name=0.01
+
+total_return: 1.3491%
+annual_return: 0.0812%
+max_drawdown: -7.0612%
+Sharpe: 0.0437
+end_equity: 1013491.37  net_pnl: 13491.37
+opens: 196  closes: 196  win_rate(closes): 42.86%
+rebalances: 208  (xgb=90, fallback=118)
+
+Compare vs prior XGB (12-name, 5d horizon/rebal, min_samples=200):
+  prior   total=8.3404%  ann=0.4292%  maxDD=-23.437%  Sharpe=0.1022  xgb/fb=559/384
+  this    total=1.3491%  ann=0.0812%  maxDD=-7.0612%  Sharpe=0.0437  xgb/fb=90/118
+
+Compare vs equal-weight 20-name baseline (5d rebal, no XGB):
+  ew20    total=11.0232%  ann=0.6356%  maxDD=-22.3767%  Sharpe=0.1251
+  xgb20d  total=1.3491%  ann=0.0812%  maxDD=-7.0612%  Sharpe=0.0437
+
+Final-model feature importance (gain-style, last fit):
+  mom_60: 0.2125
+  low_vol: 0.1769
+  channel_pos: 0.1706
+  mom_120: 0.1656
+  mom_20: 0.1465
+  oi_chg_20: 0.1278
+
+Caveats:
+- Sina main-force continuous bars; rolls/gaps not modeled.
+- Fill at signal-bar close; optimistic vs next-open fills.
+- Early period uses equal-weight fallback until train thresholds met.
+- Higher readiness delays ML start; curve is hybrid (EW then XGB).
+- EW20 baseline still uses 5d rebalance — horizon differs from this 20d run.
+- Past backtest != future expectation.

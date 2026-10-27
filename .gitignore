@@ -1,0 +1,43 @@
+# Virtual envs & bundled interpreters
+.venv/
+venv/
+env/
+python/
+python313/
+
+# Python junk
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs / temp
+*.log
+*.tmp
+*_size_tmp.txt
+vnpy_size_tmp.txt
+
+# Secrets / local credentials (if any appear later)
+*.pem
+.env
+.env.*
+!.env.example
+
+# Local Windows install notes (do not push)
+README.txt
+

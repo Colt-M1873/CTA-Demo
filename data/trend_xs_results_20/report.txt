@@ -1,0 +1,20 @@
+Trend-gated cross-sectional multifactor backtest
+universe: AG, AU, CF, CU, FG, I, J, JM, L, M, MA, P, PP, RB, RU, SA, SC, TA, V, Y
+range: 2009-09-30 -> 2026-10-27  days=4159
+rebalance: every 5 trading days | select_pct=0.25
+capital=1000000.0 | commission=0.0001 | slippage=1 tick | risk_frac/name=0.01
+
+total_return: 11.0232%
+annual_return: 0.6356%
+max_drawdown: -22.3767%
+Sharpe: 0.1251
+end_equity: 1110231.79  net_pnl: 110231.79
+opens: 753  closes: 753  win_rate(closes): 42.23%
+rebalances: 832
+
+Caveats:
+- Sina main-force continuous bars; rolls/gaps not modeled.
+- Fill at signal-bar close; optimistic vs next-open fills.
+- Simplified fees; ATR sizing may under/over-allocate vs margin rules.
+- Commodity pool = 20 active names; still no financials; cross-section improved vs 12.
+- Past backtest ≠ future expectation.

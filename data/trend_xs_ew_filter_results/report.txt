@@ -1,0 +1,30 @@
+Trend-gated XS + fake-breakout filter + equal-weight sizing
+universe: AG, AU, CF, CU, FG, I, J, JM, L, M, MA, P, PP, RB, RU, SA, SC, TA, V, Y
+range: 2009-09-30 -> 2026-10-27  days=4159
+rebalance: every 5 trading days | select_pct=0.25
+capital=1000000.0 | commission=0.0001 | slippage=1 tick
+sizing=equal_weight gross_leverage=1.0 max_lots=50
+filter: body/ATR>=0.25 AND volume>prior_20d_sma (plus Donchian gate)
+
+total_return: 19.1291%
+annual_return: 1.0662%
+max_drawdown: -37.8207%
+Sharpe: 0.1505
+end_equity: 1191291.26  net_pnl: 191291.26
+opens: 544  closes: 544  win_rate(closes): 43.93%
+rebalances: 832
+filter_rejects(gate_but_not_enter): 734
+
+Compare vs baseline ATR 20-commodity (trend_xs_results_20):
+  baseline total_return: 11.0232%  vs  19.1291%
+  baseline annual: 0.6356%  vs  1.0662%
+  baseline max_dd: -22.3767%  vs  -37.8207%
+  baseline Sharpe: 0.1251  vs  0.1505
+  baseline opens: 753  vs  544
+
+Caveats:
+- Sina main-force continuous; rolls/gaps not modeled.
+- Fill at signal-bar close.
+- Equal-weight may skip expensive contracts (AU/SC) when budget < 1 lot.
+- Filter uses same-bar body/volume (EOD close fill assumption).
+- Past backtest ≠ future expectation.

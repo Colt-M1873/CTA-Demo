@@ -1,0 +1,50 @@
+{
+  "strategy": "趋势门控 + 截面动量多因子",
+  "strategy_en": "Trend-gated cross-sectional multifactor",
+  "universe": [
+    "AG",
+    "AU",
+    "CF",
+    "CU",
+    "I",
+    "M",
+    "MA",
+    "RB",
+    "RU",
+    "SC",
+    "TA",
+    "Y"
+  ],
+  "start": "2007-07-05",
+  "end": "2026-10-27",
+  "days": 4714,
+  "total_return_pct": 23.016,
+  "annual_return_pct": 1.1135,
+  "max_ddpercent": -20.5136,
+  "sharpe_ratio": 0.223,
+  "end_equity": 1230160.44,
+  "total_net_pnl": 230160.44,
+  "n_opens": 671,
+  "n_closes": 671,
+  "win_rate_pct": 43.22,
+  "n_rebalances": 943,
+  "params": {
+    "entry_window": 20,
+    "atr_window": 20,
+    "select_pct": 0.25,
+    "rebalance_every_n_days": 5,
+    "capital": 1000000.0,
+    "commission_rate": 0.0001,
+    "risk_frac_per_name": 0.01,
+    "max_lots_per_name": 20,
+    "factor_cols": [
+      "mom_20",
+      "mom_60",
+      "mom_120",
+      "low_vol",
+      "oi_chg_20"
+    ]
+  },
+  "equity_csv": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\trend_xs_results\\equity_curve.csv",
+  "trades_csv": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\trend_xs_results\\trades.csv"
+}

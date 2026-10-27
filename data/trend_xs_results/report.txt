@@ -1,0 +1,21 @@
+Trend-gated cross-sectional multifactor backtest
+strategy: 趋势门控 + 截面动量多因子
+universe: AG, AU, CF, CU, I, M, MA, RB, RU, SC, TA, Y
+range: 2007-07-05 -> 2026-10-27  days=4714
+rebalance: every 5 trading days | select_pct=0.25
+capital=1000000 | commission=0.0001 | slippage=1 tick | risk_frac/name=0.01
+
+total_return: 23.0160%
+annual_return: 1.1135%
+max_drawdown: -20.5136%
+Sharpe: 0.2230
+end_equity: 1230160.44  net_pnl: 230160.44
+opens: 671  closes: 671  win_rate(closes): 43.22%
+rebalances: 943
+
+Caveats:
+- Sina main-force continuous bars; rolls/gaps not modeled.
+- Fill at signal-bar close; optimistic vs next-open fills.
+- Simplified fees; ATR sizing may under/over-allocate vs margin rules.
+- Small commodity pool (~12); cross-section noisy.
+- Past backtest != future expectation.

@@ -1,0 +1,7 @@
+Trend XS signal search winner: signal_best
+Sharpe=0.4728  ann=2.8221%  DD=-11.484%  total=49.9925%
+signal: entry=40 select=0.25 rebal=10 bodyATR=0.25 vol_filter=True factors=all
+risk profile fixed: search_best
+avg/max gross=0.0622/0.8061
+
+Note: signal-only tuning on same scheme; in-sample Sharpe still typically ~0.1-0.25, not 0.6.

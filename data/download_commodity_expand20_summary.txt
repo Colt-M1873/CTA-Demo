@@ -1,0 +1,41 @@
+akshare_version=1.19.3
+api=ak.futures_zh_daily_sina
+out_dir=C:\Users\Administrator\Desktop\vnpy\data
+target_new=8
+
+=== SUCCESS (new) ===
+OK	J	J0	焦炭	rows=3769	start=2011-04-15	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\J_daily_main_sina.csv
+OK	JM	JM0	焦煤	rows=3297	start=2013-03-22	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\JM_daily_main_sina.csv
+OK	P	P0	棕榈油	rows=4618	start=2007-10-29	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\P_daily_main_sina.csv
+OK	L	L0	塑料	rows=4679	start=2007-07-31	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\L_daily_main_sina.csv
+OK	PP	PP0	聚丙烯	rows=3076	start=2014-02-28	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\PP_daily_main_sina.csv
+OK	V	V0	PVC	rows=4225	start=2009-05-25	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\V_daily_main_sina.csv
+OK	FG	FG0	玻璃	rows=3364	start=2012-12-03	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\FG_daily_main_sina.csv
+OK	SA	SA0	纯碱	rows=1668	start=2019-12-06	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\SA_daily_main_sina.csv
+
+=== SKIP ===
+
+=== FAIL ===
+(none)
+
+=== COMMODITY POOL (20) ===
+AG	白银
+AU	黄金
+CF	棉花
+CU	铜
+FG	玻璃
+I	铁矿石
+J	焦炭
+JM	焦煤
+L	塑料
+M	豆粕
+MA	甲醇
+P	棕榈油
+PP	聚丙烯
+RB	螺纹钢
+RU	橡胶
+SA	纯碱
+SC	原油
+TA	PTA
+V	PVC
+Y	豆油

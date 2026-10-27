@@ -1,0 +1,19 @@
+contracts=17230
+subscribed=au2612.SHFE
+ticks=5
+
+[TICK] au2612.SHFE last=892.02 bid=892.02 ask=892.0600000000001 vol=100411 time=2026-10-20 23:42:35.500000+08:00
+[TICK] au2612.SHFE last=892.02 bid=892.04 ask=892.0600000000001 vol=100411 time=2026-10-20 23:42:36+08:00
+[TICK] au2612.SHFE last=892.04 bid=892.02 ask=892.0600000000001 vol=100412 time=2026-10-20 23:42:36.500000+08:00
+[TICK] au2612.SHFE last=892.0600000000001 bid=892.02 ask=892.0600000000001 vol=100413 time=2026-10-20 23:42:37+08:00
+[TICK] au2612.SHFE last=892.0600000000001 bid=892.04 ask=892.0600000000001 vol=100413 time=2026-10-20 23:42:37.500000+08:00
+
+[LOG][MainEngine] 连接登录 -> CTP
+[LOG][CTP] 交易服务器连接成功
+[LOG][CTP] 行情服务器连接成功
+[LOG][CTP] 交易服务器授权验证成功
+[LOG][CTP] 行情服务器登录成功
+[LOG][CTP] 交易服务器登录成功
+[LOG][CTP] 结算信息确认成功
+[LOG][CTP] 合约信息查询成功
+[LOG][MainEngine] 订阅行情 -> CTP：SubscribeRequest(symbol='au2612', exchange=<Exchange.SHFE: 'SHFE'>)

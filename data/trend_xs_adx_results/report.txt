@@ -1,0 +1,33 @@
+Trend-gated XS + fake-breakout filter + EW sizing + ADX(14) factor
+universe (40): A, AG, AL, AU, B, BU, C, CF, CS, CU, EB, EG, FG, FU, HC, I, J, JD, JM, L, M, MA, NI, OI, P, PB, PP, RB, RM, RU, SA, SC, SN, SP, SR, TA, UR, V, Y, ZN
+range: 2011-09-28 -> 2026-10-27  days=3671
+rebalance: every 5 trading days | select_pct=0.25
+capital=1000000.0 | commission=0.0001 | slippage=1 tick
+sizing=equal_weight gross_leverage=1.0 max_lots=50
+filter: body/ATR>=0.25 AND volume>prior_20d_sma (plus Donchian gate)
+factors: mom_20, mom_60, mom_120, low_vol, oi_chg_20, adx (equal-weight robust-z; ADX Wilder 14 at close)
+short scoring: directional factors flipped; ADX/low_vol stay positive
+
+total_return: 11.8913%
+annual_return: 0.7743%
+max_drawdown: -24.0852%
+Sharpe: 0.1256
+end_equity: 1118912.56  net_pnl: 118912.56
+opens: 749  closes: 747  win_rate(closes): 40.03%
+rebalances: 735
+filter_rejects(gate_but_not_enter): 1195
+
+Compare vs prior EW+filter 20-name (trend_xs_ew_filter_results):
+  prior total_return: 19.1291%  vs  11.8913%
+  prior annual: 1.0662%  vs  0.7743%
+  prior max_dd: -37.8207%  vs  -24.0852%
+  prior Sharpe: 0.1505  vs  0.1256
+  prior opens: 544  vs  749
+
+Caveats:
+- Sina main-force continuous; rolls/gaps not modeled.
+- Fill at signal-bar close; ADX_t known at that close.
+- Equal-weight may skip expensive contracts when budget < 1 lot.
+- New-name multipliers/priceticks are reasonable defaults — refine for live.
+- Universe 40 vs prior 20 — not a pure ADX-only A/B (both ADX and universe changed).
+- Past backtest != future expectation.

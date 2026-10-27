@@ -1,0 +1,35 @@
+Trend-gated XS multifactor + XGBoost backtest
+universe: AG, AU, CF, CU, I, M, MA, RB, RU, SC, TA, Y
+range: 2007-07-05 -> 2026-10-27  days=4714
+rebalance: every 5 trading days | select_pct=0.25
+label: forward 5d return (regression) | train: expanding walk-forward
+min_train_samples=200 min_train_rebals=50
+features: mom_20, mom_60, mom_120, low_vol, oi_chg_20, channel_pos
+capital=1000000.0 | commission=0.0001 | slippage=1 tick | risk_frac/name=0.01
+
+total_return: 8.3404%
+annual_return: 0.4292%
+max_drawdown: -23.4370%
+Sharpe: 0.1022
+end_equity: 1083403.75  net_pnl: 83403.75
+opens: 676  closes: 676  win_rate(closes): 42.31%
+rebalances: 943  (xgb=559, fallback=384)
+
+Compare vs baseline equal-weight factors:
+  baseline total_return: 23.016%  ann=1.1135%  maxDD=-20.5136%  Sharpe=0.223
+  xgb       total_return: 8.3404%  ann=0.4292%  maxDD=-23.437%  Sharpe=0.1022
+
+Final-model feature importance (gain-style, last fit):
+  channel_pos: 0.1873
+  oi_chg_20: 0.1787
+  low_vol: 0.1693
+  mom_120: 0.1676
+  mom_60: 0.1595
+  mom_20: 0.1375
+
+Caveats:
+- Sina main-force continuous bars; rolls/gaps not modeled.
+- Fill at signal-bar close; optimistic vs next-open fills.
+- Early period uses equal-weight fallback until train thresholds met.
+- Small pool + noisy labels; XGB can overfit walk-forward panels.
+- Past backtest != future expectation.

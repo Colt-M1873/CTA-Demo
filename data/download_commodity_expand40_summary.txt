@@ -1,0 +1,74 @@
+akshare_version=1.19.3
+api=ak.futures_zh_daily_sina
+out_dir=C:\Users\Administrator\Desktop\vnpy\data
+target_new=20
+
+=== SUCCESS (new) ===
+OK	HC	HC0	热卷	rows=3066	start=2014-03-21	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\HC_daily_main_sina.csv
+OK	AL	AL0	铝	rows=5304	start=2005-01-04	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\AL_daily_main_sina.csv
+OK	ZN	ZN0	锌	rows=4767	start=2007-03-26	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\ZN_daily_main_sina.csv
+OK	NI	NI0	镍	rows=2816	start=2015-03-27	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\NI_daily_main_sina.csv
+OK	SN	SN0	锡	rows=2816	start=2015-03-27	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\SN_daily_main_sina.csv
+OK	PB	PB0	铅	rows=3787	start=2011-03-24	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\PB_daily_main_sina.csv
+OK	BU	BU0	沥青	rows=3170	start=2013-10-09	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\BU_daily_main_sina.csv
+OK	EB	EB0	苯乙烯	rows=1714	start=2019-09-26	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\EB_daily_main_sina.csv
+OK	EG	EG0	乙二醇	rows=1908	start=2018-12-10	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\EG_daily_main_sina.csv
+OK	SP	SP0	纸浆	rows=1917	start=2018-11-27	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\SP_daily_main_sina.csv
+OK	FU	FU0	燃油	rows=5279	start=2005-01-04	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\FU_daily_main_sina.csv
+OK	UR	UR0	尿素	rows=1747	start=2019-08-09	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\UR_daily_main_sina.csv
+OK	RM	RM0	菜粕	rows=3350	start=2012-12-28	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\RM_daily_main_sina.csv
+OK	OI	OI0	菜油	rows=4708	start=2007-06-08	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\OI_daily_main_sina.csv
+OK	SR	SR0	白糖	rows=5048	start=2006-01-12	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\SR_daily_main_sina.csv
+OK	A	A0	豆一	rows=5304	start=2005-01-04	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\A_daily_main_sina.csv
+OK	C	C0	玉米	rows=5301	start=2005-01-04	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\C_daily_main_sina.csv
+OK	CS	CS0	玉米淀粉	rows=2875	start=2014-12-22	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\CS_daily_main_sina.csv
+OK	B	B0	豆二	rows=4509	start=2007-08-27	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\B_daily_main_sina.csv
+OK	JD	JD0	鸡蛋	rows=3151	start=2013-11-08	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\JD_daily_main_sina.csv
+
+=== SKIP ===
+(none)
+
+=== FAIL ===
+(none)
+
+=== COMMODITY POOL (40) ===
+A	豆一	rows=5304	start=2005-01-04	end=2026-10-27
+AG	白银	rows=3517	start=2012-05-10	end=2026-10-26
+AL	铝	rows=5304	start=2005-01-04	end=2026-10-27
+AU	黄金	rows=4577	start=2008-01-09	end=2026-10-27
+B	豆二	rows=4509	start=2007-08-27	end=2026-10-27
+BU	沥青	rows=3170	start=2013-10-09	end=2026-10-27
+C	玉米	rows=5301	start=2005-01-04	end=2026-10-27
+CF	棉花	rows=5305	start=2005-01-04	end=2026-10-27
+CS	玉米淀粉	rows=2875	start=2014-12-22	end=2026-10-27
+CU	铜	rows=5304	start=2005-01-04	end=2026-10-27
+EB	苯乙烯	rows=1714	start=2019-09-26	end=2026-10-27
+EG	乙二醇	rows=1908	start=2018-12-10	end=2026-10-27
+FG	玻璃	rows=3364	start=2012-12-03	end=2026-10-27
+FU	燃油	rows=5279	start=2005-01-04	end=2026-10-27
+HC	热卷	rows=3066	start=2014-03-21	end=2026-10-27
+I	铁矿石	rows=3165	start=2013-10-18	end=2026-10-27
+J	焦炭	rows=3769	start=2011-04-15	end=2026-10-27
+JD	鸡蛋	rows=3151	start=2013-11-08	end=2026-10-27
+JM	焦煤	rows=3297	start=2013-03-22	end=2026-10-27
+L	塑料	rows=4679	start=2007-07-31	end=2026-10-27
+M	豆粕	rows=5306	start=2005-01-04	end=2026-10-26
+MA	甲醇	rows=2868	start=2014-12-24	end=2026-10-27
+NI	镍	rows=2816	start=2015-03-27	end=2026-10-27
+OI	菜油	rows=4708	start=2007-06-08	end=2026-10-27
+P	棕榈油	rows=4618	start=2007-10-29	end=2026-10-27
+PB	铅	rows=3787	start=2011-03-24	end=2026-10-27
+PP	聚丙烯	rows=3076	start=2014-02-28	end=2026-10-27
+RB	螺纹钢	rows=4268	start=2009-03-27	end=2026-10-27
+RM	菜粕	rows=3350	start=2012-12-28	end=2026-10-27
+RU	橡胶	rows=5302	start=2005-01-04	end=2026-10-27
+SA	纯碱	rows=1668	start=2019-12-06	end=2026-10-27
+SC	原油	rows=2082	start=2018-03-26	end=2026-10-27
+SN	锡	rows=2816	start=2015-03-27	end=2026-10-27
+SP	纸浆	rows=1917	start=2018-11-27	end=2026-10-27
+SR	白糖	rows=5048	start=2006-01-12	end=2026-10-27
+TA	PTA	rows=4821	start=2006-12-19	end=2026-10-26
+UR	尿素	rows=1747	start=2019-08-09	end=2026-10-27
+V	PVC	rows=4225	start=2009-05-25	end=2026-10-27
+Y	豆油	rows=5050	start=2006-01-09	end=2026-10-27
+ZN	锌	rows=4767	start=2007-03-26	end=2026-10-27

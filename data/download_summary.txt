@@ -1,0 +1,38 @@
+akshare_version=1.19.3
+api=ak.futures_zh_daily_sina
+out_dir=C:\Users\Administrator\Desktop\vnpy\data
+skipped=RB0 (already present as RB_daily_main_sina.csv)
+
+=== SUCCESS ===
+OK	AU	AU0	黄金	rows=4577	start=2008-01-09	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\AU_daily_main_sina.csv
+OK	AG	AG0	白银	rows=3517	start=2012-05-10	end=2026-10-26	path=C:\Users\Administrator\Desktop\vnpy\data\AG_daily_main_sina.csv
+OK	CU	CU0	铜	rows=5304	start=2005-01-04	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\CU_daily_main_sina.csv
+OK	I	I0	铁矿石	rows=3165	start=2013-10-18	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\I_daily_main_sina.csv
+OK	M	M0	豆粕	rows=5306	start=2005-01-04	end=2026-10-26	path=C:\Users\Administrator\Desktop\vnpy\data\M_daily_main_sina.csv
+OK	Y	Y0	豆油	rows=5050	start=2006-01-09	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\Y_daily_main_sina.csv
+OK	TA	TA0	PTA	rows=4821	start=2006-12-19	end=2026-10-26	path=C:\Users\Administrator\Desktop\vnpy\data\TA_daily_main_sina.csv
+OK	MA	MA0	甲醇	rows=2868	start=2014-12-24	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\MA_daily_main_sina.csv
+OK	CF	CF0	棉花	rows=5305	start=2005-01-04	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\CF_daily_main_sina.csv
+OK	IF	IF0	沪深300股指	rows=2370	start=2017-01-17	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\IF_daily_main_sina.csv
+OK	SC	SC0	原油	rows=2082	start=2018-03-26	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\SC_daily_main_sina.csv
+
+=== FAIL ===
+(none)
+
+=== FINANCIAL FUTURES ===
+akshare_version=1.19.3
+api=ak.futures_zh_daily_sina
+skipped=IF0 (already present as IF_daily_main_sina.csv)
+script=download_akshare_financial.py
+
+=== FINANCIAL SUCCESS ===
+OK	IH	IH0	上证50股指	rows=2370	start=2017-01-17	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\IH_daily_main_sina.csv
+OK	IC	IC0	中证500股指	rows=2370	start=2017-01-17	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\IC_daily_main_sina.csv
+OK	IM	IM0	中证1000股指	rows=1032	start=2022-07-22	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\IM_daily_main_sina.csv
+OK	T	T0	10年期国债	rows=2370	start=2017-01-17	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\T_daily_main_sina.csv
+OK	TF	TF0	5年期国债	rows=2370	start=2017-01-17	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\TF_daily_main_sina.csv
+OK	TS	TS0	2年期国债	rows=1984	start=2018-08-17	end=2026-10-27	path=C:\Users\Administrator\Desktop\vnpy\data\TS_daily_main_sina.csv
+OK	TL	TL0	30年期国债	rows=849	start=2023-04-21	end=2026-10-26	path=C:\Users\Administrator\Desktop\vnpy\data\TL_daily_main_sina.csv
+
+=== FINANCIAL FAIL ===
+(none)

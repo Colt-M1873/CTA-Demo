@@ -1,0 +1,36 @@
+{
+  "recommended_name": "vol15_floor04_cap08_dd15_25",
+  "registered_as": "search_best",
+  "config": {
+    "enable_vol_target": true,
+    "vol_target_annual": 0.15,
+    "vol_lookback": 20,
+    "vol_scale_min": 0.4,
+    "vol_scale_max": 1.5,
+    "enable_gross_leverage_cap": true,
+    "gross_leverage_cap": 0.8,
+    "risk_base_gross": 1.0,
+    "enable_dd_circuit": true,
+    "dd_half_threshold": 0.15,
+    "dd_flat_threshold": 0.25,
+    "dd_recovery_threshold": 0.1,
+    "dd_flat_recover_threshold": 0.15,
+    "dd_recovery_rule": "Escalate: DD>15%→HALF(0.5), DD>25%→FLAT(0). Recover FLAT→HALF <= 15%; HALF→NORMAL <= 10%."
+  },
+  "metrics": {
+    "sharpe_ratio": 0.1442,
+    "annual_return_pct": 0.7549,
+    "total_return_pct": 11.5789,
+    "max_ddpercent": -17.4845,
+    "avg_gross_leverage": 0.1245,
+    "max_gross_leverage": 0.8642,
+    "days_half": 1349,
+    "days_flat": 0,
+    "n_opens": 721,
+    "win_rate_pct": 40.33,
+    "end_equity": 1115789.47
+  },
+  "best_overall_name": "vol15_floor04_cap08_dd15_25",
+  "best_overall_sharpe": 0.1442,
+  "note": "Primary sort: Sharpe, then max DD (less negative), then total return. Recommended is best risk-ON config. Risk-only tuning cannot push Sharpe to ~0.6."
+}

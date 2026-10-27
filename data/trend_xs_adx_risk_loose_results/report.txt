@@ -1,0 +1,42 @@
+Trend-gated XS + fake-breakout + EW + ADX(14) + RISK overlay [loose]
+universe (40): A, AG, AL, AU, B, BU, C, CF, CS, CU, EB, EG, FG, FU, HC, I, J, JD, JM, L, M, MA, NI, OI, P, PB, PP, RB, RM, RU, SA, SC, SN, SP, SR, TA, UR, V, Y, ZN
+range: 2011-09-28 -> 2026-10-27  days=3671
+rebalance: every 5 trading days | select_pct=0.25
+capital=1000000.0 | commission=0.0001 | slippage=1 tick
+base_gross=1.0 | vol_target=True@0.12 lookback=20
+leverage_cap=True@0.8
+dd_circuit=True half>0.15 flat>0.25 HALF->NORMAL<=0.1 FLAT->HALF<=0.15 vol_floor=0.25
+filter: body/ATR>=0.25 AND volume>prior_20d_sma (plus Donchian gate)
+factors: mom_20, mom_60, mom_120, low_vol, oi_chg_20, adx
+
+total_return: 7.9872%
+annual_return: 0.5289%
+max_drawdown: -19.5083%
+Sharpe: 0.1107
+end_equity: 1079872.15  net_pnl: 79872.15
+opens: 723  closes: 721  win_rate(closes): 40.22%
+rebalances: 735
+filter_rejects: 1195
+dd days HALF/FLAT: 1231/0  flat_force_closes: 0
+avg/max gross leverage: 0.1267 / 0.8642
+
+Compare vs prior ADX+40 EW (trend_xs_adx_results):
+  prior total_return: 11.8913%  vs  7.9872%
+  prior annual: 0.7743%  vs  0.5289%
+  prior max_dd: -24.0852%  vs  -19.5083%
+  prior Sharpe: 0.1256  vs  0.1107
+  prior opens: 749  vs  723
+
+Compare vs TIGHT risk (trend_xs_adx_risk_results):
+  tight total_return: -2.0182%  vs  7.9872%
+  tight annual: -0.1399%  vs  0.5289%
+  tight max_dd: -15.136%  vs  -19.5083%
+  tight Sharpe: -0.0031  vs  0.1107
+  tight avg/max gross: 0.0897/0.7348  vs  0.1267/0.8642
+  tight HALF/FLAT days: 2215/105  vs  1231/0
+
+Caveats:
+- Same Sina main-force continuous caveats as ADX baseline.
+- Vol scale uses prior equity returns only (no same-day lookahead).
+- Gross cap applied after vol scale; DD mult last.
+- Past backtest != future expectation.

@@ -1,0 +1,982 @@
+[
+  {
+    "category": "hs300",
+    "api": "option_cffex_hs300_list_sina",
+    "args": {},
+    "ok": true,
+    "rows": 6,
+    "cols": [
+      "沪深300指数"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_cffex_hs300_list_sina_dict.json",
+    "note": "dict payload",
+    "error": null,
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "沪深300股指期权",
+      "end_month": "2511"
+    },
+    "ok": true,
+    "rows": 60,
+    "cols": [
+      "instrument",
+      "position",
+      "volume",
+      "lastprice",
+      "updown",
+      "bprice",
+      "bamount",
+      "sprice",
+      "samount"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_finance_board_symbol-沪深300股指期权_end_month-2511.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": "lastprice",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": "volume",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "lastprice": 0.0,
+      "volume": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华夏沪深300ETF期权",
+      "end_month": "2511"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华泰柏瑞沪深300ETF期权",
+      "end_month": "2511"
+    },
+    "ok": true,
+    "rows": 28,
+    "cols": [
+      "日期",
+      "合约交易代码",
+      "当前价",
+      "涨跌幅",
+      "前结价",
+      "行权价",
+      "数量"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_finance_board_symbol-华泰柏瑞沪深300ETF期权_end_month-2511.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权价",
+      "call_put": null,
+      "expiry": null,
+      "last": null,
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权价": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "沪深300股指期权",
+      "end_month": "2512"
+    },
+    "ok": true,
+    "rows": 64,
+    "cols": [
+      "instrument",
+      "position",
+      "volume",
+      "lastprice",
+      "updown",
+      "bprice",
+      "bamount",
+      "sprice",
+      "samount"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_finance_board_symbol-沪深300股指期权_end_month-2512.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": "lastprice",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": "volume",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "lastprice": 0.0,
+      "volume": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华夏沪深300ETF期权",
+      "end_month": "2512"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华泰柏瑞沪深300ETF期权",
+      "end_month": "2512"
+    },
+    "ok": true,
+    "rows": 36,
+    "cols": [
+      "日期",
+      "合约交易代码",
+      "当前价",
+      "涨跌幅",
+      "前结价",
+      "行权价",
+      "数量"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_finance_board_symbol-华泰柏瑞沪深300ETF期权_end_month-2512.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权价",
+      "call_put": null,
+      "expiry": null,
+      "last": null,
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权价": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "沪深300股指期权",
+      "end_month": "2601"
+    },
+    "ok": true,
+    "rows": 42,
+    "cols": [
+      "instrument",
+      "position",
+      "volume",
+      "lastprice",
+      "updown",
+      "bprice",
+      "bamount",
+      "sprice",
+      "samount"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_finance_board_symbol-沪深300股指期权_end_month-2601.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": "lastprice",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": "volume",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "lastprice": 0.0,
+      "volume": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华夏沪深300ETF期权",
+      "end_month": "2601"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华泰柏瑞沪深300ETF期权",
+      "end_month": "2601"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "ValueError: Length mismatch: Expected axis has 0 elements, new values have 5 elements",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "沪深300股指期权",
+      "end_month": "2603"
+    },
+    "ok": true,
+    "rows": 36,
+    "cols": [
+      "instrument",
+      "position",
+      "volume",
+      "lastprice",
+      "updown",
+      "bprice",
+      "bamount",
+      "sprice",
+      "samount"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_finance_board_symbol-沪深300股指期权_end_month-2603.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": "lastprice",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": "volume",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "lastprice": 0.0,
+      "volume": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华夏沪深300ETF期权",
+      "end_month": "2603"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_finance_board",
+    "args": {
+      "symbol": "华泰柏瑞沪深300ETF期权",
+      "end_month": "2603"
+    },
+    "ok": true,
+    "rows": 32,
+    "cols": [
+      "日期",
+      "合约交易代码",
+      "当前价",
+      "涨跌幅",
+      "前结价",
+      "行权价",
+      "数量"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_finance_board_symbol-华泰柏瑞沪深300ETF期权_end_month-2603.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权价",
+      "call_put": null,
+      "expiry": null,
+      "last": null,
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权价": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_cffex_hs300_spot_sina",
+    "args": {
+      "symbol": "io2611"
+    },
+    "ok": true,
+    "rows": 30,
+    "cols": [
+      "看涨合约-买量",
+      "看涨合约-买价",
+      "看涨合约-最新价",
+      "看涨合约-卖价",
+      "看涨合约-卖量",
+      "看涨合约-持仓量",
+      "看涨合约-涨跌",
+      "行权价",
+      "看涨合约-标识",
+      "看跌合约-买量",
+      "看跌合约-买价",
+      "看跌合约-最新价",
+      "看跌合约-卖价",
+      "看跌合约-卖量",
+      "看跌合约-持仓量",
+      "看跌合约-涨跌",
+      "看跌合约-标识"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_cffex_hs300_spot_sina_symbol-io2611.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权价",
+      "call_put": "看涨合约-买价",
+      "expiry": null,
+      "last": "看跌合约-最新价",
+      "bid": "看涨合约-买价",
+      "ask": "看跌合约-卖价",
+      "iv": null,
+      "oi": "看跌合约-持仓量",
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权价": 0.0,
+      "看涨合约-买价": 0.0,
+      "看跌合约-最新价": 0.0,
+      "看跌合约-卖价": 0.0,
+      "看跌合约-持仓量": 0.0
+    }
+  },
+  {
+    "category": "hs300",
+    "api": "option_cffex_hs300_daily_sina",
+    "args": {
+      "symbol": "1"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "SyntaxError: invalid syntax (<string>, line 0)",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_sse_list_sina",
+    "args": {
+      "symbol": "300ETF",
+      "exchange": "null"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "unexpected type <class 'list'>",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "hs300",
+    "api": "option_current_em",
+    "args": {},
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "ProxyError: HTTPSConnectionPool(host='23.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f3&fs=m%3A10%2Cm%3A12%2Cm%3A140%2Cm%3A141%2Cm%3A151%2Cm%3A163%2Cm%3A226&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf28%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152%2Cf133%2Cf108%2Cf163%2Cf161%2Cf162 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_commodity_contract_sina",
+    "args": {
+      "symbol": "黄金期权"
+    },
+    "ok": true,
+    "rows": 5,
+    "cols": [
+      "序号",
+      "合约"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_commodity_contract_sina_symbol-黄金期权.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": null,
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_commodity_contract_sina",
+    "args": {
+      "symbol": "铜期权"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "KeyError: '铜期权'",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_commodity_contract_sina",
+    "args": {
+      "symbol": "螺纹钢期权"
+    },
+    "ok": true,
+    "rows": 4,
+    "cols": [
+      "序号",
+      "合约"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_commodity_contract_sina_symbol-螺纹钢期权.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": null,
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_commodity_contract_table_sina",
+    "args": {
+      "symbol": "黄金期权",
+      "contract": "au2612"
+    },
+    "ok": true,
+    "rows": 88,
+    "cols": [
+      "看涨合约-买量",
+      "看涨合约-买价",
+      "看涨合约-最新价",
+      "看涨合约-卖价",
+      "看涨合约-卖量",
+      "看涨合约-持仓量",
+      "看涨合约-涨跌",
+      "行权价",
+      "看涨合约-看涨期权合约",
+      "看跌合约-买量",
+      "看跌合约-买价",
+      "看跌合约-最新价",
+      "看跌合约-卖价",
+      "看跌合约-卖量",
+      "看跌合约-持仓量",
+      "看跌合约-涨跌",
+      "看跌合约-看跌期权合约"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_commodity_contract_table_sina_symbol-黄金期权_contract-au2612.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权价",
+      "call_put": "看涨合约-看涨期权合约",
+      "expiry": null,
+      "last": "看跌合约-最新价",
+      "bid": "看涨合约-买价",
+      "ask": "看跌合约-卖价",
+      "iv": null,
+      "oi": "看跌合约-持仓量",
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权价": 0.0,
+      "看涨合约-看涨期权合约": 0.0,
+      "看跌合约-最新价": 0.011363636363636364,
+      "看涨合约-买价": 0.0,
+      "看跌合约-卖价": 0.011363636363636364,
+      "看跌合约-持仓量": 0.011363636363636364
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_commodity_hist_sina",
+    "args": {
+      "symbol": "au2612C648"
+    },
+    "ok": true,
+    "rows": 12,
+    "cols": [
+      "date",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_commodity_hist_sina_symbol-au2612C648.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": "close",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": "volume",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "close": 0.0,
+      "volume": 0.0
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_commodity_contract_table_sina",
+    "args": {
+      "symbol": "黄金期权",
+      "contract": "au2702"
+    },
+    "ok": true,
+    "rows": 70,
+    "cols": [
+      "看涨合约-买量",
+      "看涨合约-买价",
+      "看涨合约-最新价",
+      "看涨合约-卖价",
+      "看涨合约-卖量",
+      "看涨合约-持仓量",
+      "看涨合约-涨跌",
+      "行权价",
+      "看涨合约-看涨期权合约",
+      "看跌合约-买量",
+      "看跌合约-买价",
+      "看跌合约-最新价",
+      "看跌合约-卖价",
+      "看跌合约-卖量",
+      "看跌合约-持仓量",
+      "看跌合约-涨跌",
+      "看跌合约-看跌期权合约"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_commodity_contract_table_sina_symbol-黄金期权_contract-au2702.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权价",
+      "call_put": "看涨合约-看涨期权合约",
+      "expiry": null,
+      "last": "看跌合约-最新价",
+      "bid": "看涨合约-买价",
+      "ask": "看跌合约-卖价",
+      "iv": null,
+      "oi": "看跌合约-持仓量",
+      "volume": null,
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权价": 0.0,
+      "看涨合约-看涨期权合约": 0.0,
+      "看跌合约-最新价": 0.32857142857142857,
+      "看涨合约-买价": 0.21428571428571427,
+      "看跌合约-卖价": 0.32857142857142857,
+      "看跌合约-持仓量": 0.32857142857142857
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_commodity_hist_sina",
+    "args": {
+      "symbol": "au2702C680"
+    },
+    "ok": true,
+    "rows": 1,
+    "cols": [
+      "date",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_commodity_hist_sina_symbol-au2702C680.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": null,
+      "call_put": null,
+      "expiry": null,
+      "last": "close",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": null,
+      "volume": "volume",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "close": 0.0,
+      "volume": 0.0
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_hist_shfe",
+    "args": {
+      "symbol": "黄金期权",
+      "trade_date": "20261024"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_vol_shfe",
+    "args": {
+      "symbol": "黄金期权",
+      "trade_date": "20261024"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_hist_shfe",
+    "args": {
+      "symbol": "黄金期权",
+      "trade_date": "20261027"
+    },
+    "ok": true,
+    "rows": 776,
+    "cols": [
+      "合约代码",
+      "开盘价",
+      "最高价",
+      "最低价",
+      "收盘价",
+      "前结算价",
+      "结算价",
+      "涨跌1",
+      "涨跌2",
+      "成交量",
+      "持仓量",
+      "持仓量变化",
+      "成交额",
+      "德尔塔",
+      "行权量"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_hist_shfe_symbol-黄金期权_trade_date-20261027.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权量",
+      "call_put": null,
+      "expiry": null,
+      "last": "收盘价",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": "持仓量",
+      "volume": "成交量",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权量": 0.0,
+      "收盘价": 0.0,
+      "持仓量": 0.0,
+      "成交量": 0.0
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_vol_shfe",
+    "args": {
+      "symbol": "黄金期权",
+      "trade_date": "20261027"
+    },
+    "ok": true,
+    "rows": 7,
+    "cols": [
+      "合约系列",
+      "成交量",
+      "持仓量",
+      "持仓量变化",
+      "成交额",
+      "行权量",
+      "隐含波动率"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_vol_shfe_symbol-黄金期权_trade_date-20261027.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权量",
+      "call_put": null,
+      "expiry": null,
+      "last": null,
+      "bid": null,
+      "ask": null,
+      "iv": "隐含波动率",
+      "oi": "持仓量",
+      "volume": "成交量",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权量": 0.0,
+      "隐含波动率": 0.0,
+      "持仓量": 0.0,
+      "成交量": 0.0
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_hist_shfe",
+    "args": {
+      "symbol": "铜期权",
+      "trade_date": "20261024"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_vol_shfe",
+    "args": {
+      "symbol": "铜期权",
+      "trade_date": "20261024"
+    },
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "empty DataFrame",
+    "field_check": {},
+    "null_rates": {}
+  },
+  {
+    "category": "commodity",
+    "api": "option_hist_shfe",
+    "args": {
+      "symbol": "铜期权",
+      "trade_date": "20261027"
+    },
+    "ok": true,
+    "rows": 378,
+    "cols": [
+      "合约代码",
+      "开盘价",
+      "最高价",
+      "最低价",
+      "收盘价",
+      "前结算价",
+      "结算价",
+      "涨跌1",
+      "涨跌2",
+      "成交量",
+      "持仓量",
+      "持仓量变化",
+      "成交额",
+      "德尔塔",
+      "行权量"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_hist_shfe_symbol-铜期权_trade_date-20261027.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权量",
+      "call_put": null,
+      "expiry": null,
+      "last": "收盘价",
+      "bid": null,
+      "ask": null,
+      "iv": null,
+      "oi": "持仓量",
+      "volume": "成交量",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权量": 0.0,
+      "收盘价": 0.0,
+      "持仓量": 0.0,
+      "成交量": 0.0
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_vol_shfe",
+    "args": {
+      "symbol": "铜期权",
+      "trade_date": "20261027"
+    },
+    "ok": true,
+    "rows": 11,
+    "cols": [
+      "合约系列",
+      "成交量",
+      "持仓量",
+      "持仓量变化",
+      "成交额",
+      "行权量",
+      "隐含波动率"
+    ],
+    "path": "C:\\Users\\Administrator\\Desktop\\vnpy\\data\\options_sample\\option_vol_shfe_symbol-铜期权_trade_date-20261027.csv",
+    "note": "",
+    "error": null,
+    "field_check": {
+      "strike": "行权量",
+      "call_put": null,
+      "expiry": null,
+      "last": null,
+      "bid": null,
+      "ask": null,
+      "iv": "隐含波动率",
+      "oi": "持仓量",
+      "volume": "成交量",
+      "delta": null,
+      "gamma": null
+    },
+    "null_rates": {
+      "行权量": 0.0,
+      "隐含波动率": 0.0,
+      "持仓量": 0.0,
+      "成交量": 0.0
+    }
+  },
+  {
+    "category": "commodity",
+    "api": "option_comm_symbol",
+    "args": {},
+    "ok": false,
+    "rows": 0,
+    "cols": [],
+    "path": null,
+    "note": "",
+    "error": "AttributeError: 'NoneType' object has no attribute 'find_all'",
+    "field_check": {},
+    "null_rates": {}
+  }
+]

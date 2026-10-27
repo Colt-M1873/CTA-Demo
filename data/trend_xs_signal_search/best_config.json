@@ -1,0 +1,35 @@
+{
+  "recommended_name": "entry_40_rebal_10",
+  "registered_as": "signal_best",
+  "risk_profile": "search_best",
+  "config": {
+    "entry_window": 40,
+    "select_pct": 0.25,
+    "rebalance_every_n_days": 10,
+    "body_atr_min": 0.25,
+    "use_volume_filter": true,
+    "factor_cols": [
+      "mom_20",
+      "mom_60",
+      "mom_120",
+      "low_vol",
+      "oi_chg_20",
+      "adx"
+    ],
+    "factor_set": "all"
+  },
+  "metrics": {
+    "sharpe_ratio": 0.4728,
+    "annual_return_pct": 2.8221,
+    "total_return_pct": 49.9925,
+    "max_ddpercent": -11.484,
+    "avg_gross_leverage": 0.0622,
+    "max_gross_leverage": 0.8061,
+    "days_half": 0,
+    "days_flat": 0,
+    "n_opens": 275,
+    "win_rate_pct": 42.49,
+    "end_equity": 1499925.36
+  },
+  "note": "Primary sort: Sharpe, then max DD (less negative), then total return. Risk fixed at search_best. Signal-only grid; do not expect Sharpe ~0.6."
+}

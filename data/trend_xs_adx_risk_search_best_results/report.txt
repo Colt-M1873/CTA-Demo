@@ -1,0 +1,7 @@
+Trend XS ADX + RISK search winner: search_best
+Sharpe=0.1442  ann=0.7549%  DD=-17.4845%  total=11.5789%
+avg/max gross=0.1245/0.8642
+HALF/FLAT days=1349/0
+config: {"enable_vol_target": true, "vol_target_annual": 0.15, "vol_lookback": 20, "vol_scale_min": 0.4, "vol_scale_max": 1.5, "enable_gross_leverage_cap": true, "gross_leverage_cap": 0.8, "risk_base_gross": 1.0, "enable_dd_circuit": true, "dd_half_threshold": 0.15, "dd_flat_threshold": 0.25, "dd_recovery_threshold": 0.1, "dd_flat_recover_threshold": 0.15, "dd_recovery_rule": "Escalate: DD>15%→HALF(0.5), DD>25%→FLAT(0). Recover FLAT→HALF <= 15%; HALF→NORMAL <= 10%."}
+
+Note: risk-only tuning; sample Sharpe still expected ~0.1-0.2, not 0.6.
